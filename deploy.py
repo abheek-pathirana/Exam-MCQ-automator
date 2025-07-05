@@ -5,12 +5,33 @@ Created on Sat Jul  5 16:34:42 2025
 
 @author: abheekpathirana
 """
+
 import streamlit as st
 from docx import Document
 from docx.shared import Pt
 from io import BytesIO
 from time import sleep
 # === Dummy MCQ Bank ===
+
+
+# === Predefined user database ===
+USER_DB = {
+    "user_1": "@1942_kreigsmarine_bismarch",
+    "user_2": "@spf_1972_1354388",
+    "user_lakshan": "1995@chaturanga_c_ika",
+    "user_3": "@spf_1990_27872771",
+    "user_4": "_1988_4436129",
+    "user_5": "u@spf_1995_234467234",
+    "user_6": "ni@spf_2000_38475",
+    "user_7": "a@spf_1993_895678384",
+    "user_8": "sachini@spf_204356701_10829",
+    "user_9": "@spf_2001_17800829",
+    "user_10": "_2001_10829",
+    "user_11": "spf_2007891_10829",
+    "user_admin": "admin_abheek",
+    "user_12": "_1997_54928"
+}
+
 mcq_bank = {
     "Economics": [
         {
@@ -115,13 +136,12 @@ if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
 
 def login_ui():
-    st.title("🔐 Login to Springfield Exam Generator")
+    st.title("Login to Springfield Exam Generator")
     username = st.text_input("Username")
     password = st.text_input("Password", type="password")
     if st.button("Login"):
-        if username == "admin" and password == "pass123":
+        if username in USER_DB and USER_DB[username] == password:
             st.session_state.logged_in = True
-            
             st.success("Login successful! Use the sidebar to continue.")
             sleep(0.1)
             st.success("A product by Abheek pathirana. ")
