@@ -16,15 +16,15 @@ from time import sleep
 
 # === Predefined user database ===
 USER_DB = {
-    "user_1": "@1942_kreigsmarine_bismarch",
+    "user_1": "@_0tp_ck_001",
     "user_2": "@spf_1972_1354388",
-    "user_lakshan": "1995@chaturanga_c_ika",
+    "user_lakshan": "1995@chaturanga_otp22",
     "user_3": "@spf_1990_27872771",
     "user_4": "_1988_4436129",
     "user_5": "u@spf_1995_234467234",
     "user_6": "ni@spf_2000_38475",
     "user_7": "a@spf_1993_895678384",
-    "user_8": "sachini@spf_204356701_10829",
+    "user_8": "sa7@spf_204356701_10829",
     "user_9": "@spf_2001_17800829",
     "user_10": "_2001_10829",
     "user_11": "spf_2007891_10829",
